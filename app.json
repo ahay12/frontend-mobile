@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Edlink Sentiment",
-    "slug": "edlink-sentiment",
+    "slug": "skripsi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,6 +19,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.edlinksentiment.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundColor": "#4f46e5"
@@ -26,6 +27,12 @@
     },
     "web": {
       "bundler": "metro"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "89630d03-21cc-4eed-b9b6-7aa268b3e08a"
+      }
+    },
+    "owner": "acndigital"
   }
 }

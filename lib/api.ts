@@ -4,11 +4,11 @@ import { Platform } from "react-native";
 // Detect optimal default base URL based on platform
 const getDefaultBaseUrl = () => {
   if (Platform.OS === "android") {
-    return "http://10.0.2.2:8000"; // Android Emulator
+    return "https://103.150.101.123.nip.io"; // Android Emulator
   } else if (Platform.OS === "ios") {
-    return "http://localhost:8000"; // iOS Simulator
+    return "https://103.150.101.123.nip.io"; // iOS Simulator
   }
-  return "http://localhost:8000"; // Web / Default
+  return "https://103.150.101.123.nip.io"; // Web / Default
 };
 
 let API_BASE_URL = getDefaultBaseUrl();
