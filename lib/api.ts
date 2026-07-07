@@ -4,11 +4,11 @@ import { Platform } from "react-native";
 // Detect optimal default base URL based on platform
 const getDefaultBaseUrl = () => {
   if (Platform.OS === "android") {
-    return "https://103.150.101.123.nip.io"; // Android Emulator
+    return "https://103-150-101-123.nip.io"; // Android Emulator
   } else if (Platform.OS === "ios") {
-    return "https://103.150.101.123.nip.io"; // iOS Simulator
+    return "https://103-150-101-123.nip.io"; // iOS Simulator
   }
-  return "https://103.150.101.123.nip.io"; // Web / Default
+  return "https://103-150-101-123.nip.io"; // Web / Default
 };
 
 let API_BASE_URL = getDefaultBaseUrl();
@@ -72,7 +72,7 @@ export interface BatchAnalyzeResponse {
 
 export const analyzeBatch = async (fileUri: string, fileName: string, fileType: string = "text/csv"): Promise<BatchAnalyzeResponse> => {
   const formData = new FormData();
-  
+
   // In React Native, we pass an object to FormData for files
   formData.append("file", {
     uri: fileUri,
