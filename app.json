@@ -33,6 +33,9 @@
         "projectId": "89630d03-21cc-4eed-b9b6-7aa268b3e08a"
       }
     },
-    "owner": "acndigital"
+    "owner": "acndigital",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
